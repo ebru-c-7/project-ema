@@ -1,0 +1,743 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "about-view.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "AboutView",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "about-view",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "AboutView",
+          "declaration": {
+            "name": "AboutView",
+            "module": "about-view.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "about-view",
+          "declaration": {
+            "name": "AboutView",
+            "module": "about-view.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "home-view.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Home",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "home-view",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Home",
+          "declaration": {
+            "name": "Home",
+            "module": "home-view.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "home-view",
+          "declaration": {
+            "name": "Home",
+            "module": "home-view.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "main-index.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "LitRealWorldIndex",
+          "members": [
+            {
+              "kind": "method",
+              "name": "loadData"
+            },
+            {
+              "kind": "method",
+              "name": "stateUpdated",
+              "inheritedFrom": {
+                "name": "BaseComponent",
+                "module": "util/store/base-component.js"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "unsubscribe",
+              "inheritedFrom": {
+                "name": "BaseComponent",
+                "module": "util/store/base-component.js"
+              }
+            }
+          ],
+          "superclass": {
+            "name": "BaseComponent",
+            "module": "/util/store/base-component.js"
+          },
+          "tagName": "main-index",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "main-index",
+          "declaration": {
+            "name": "LitRealWorldIndex",
+            "module": "main-index.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "view/add-new.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "AddNew",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "add-new",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "add-new",
+          "declaration": {
+            "name": "AddNew",
+            "module": "view/add-new.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "view/edit-item.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "EditItem",
+          "members": [
+            {
+              "kind": "field",
+              "name": "data",
+              "type": {
+                "text": "null"
+              },
+              "default": "null"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "edit-item",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "edit-item",
+          "declaration": {
+            "name": "EditItem",
+            "module": "view/edit-item.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "view/employee-list.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "EmployeeList",
+          "members": [
+            {
+              "kind": "method",
+              "name": "getMode"
+            },
+            {
+              "kind": "method",
+              "name": "handleModeChange",
+              "parameters": [
+                {
+                  "name": "mode"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "renderGridIcon"
+            },
+            {
+              "kind": "method",
+              "name": "renderTableIcon"
+            },
+            {
+              "kind": "field",
+              "name": "mode",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "mode"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "mode",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "mode"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "employee-list",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "employee-list",
+          "declaration": {
+            "name": "EmployeeList",
+            "module": "view/employee-list.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "util/index.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "convertDate",
+          "parameters": [
+            {
+              "name": "date"
+            },
+            {
+              "name": "lang",
+              "default": "\"TR\""
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "formatPhoneNumber",
+          "parameters": [
+            {
+              "name": "phone"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "convertDate",
+          "declaration": {
+            "name": "convertDate",
+            "module": "util/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "formatPhoneNumber",
+          "declaration": {
+            "name": "formatPhoneNumber",
+            "module": "util/index.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "view/components/dialog-modal.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "DialogModal",
+          "members": [
+            {
+              "kind": "method",
+              "name": "openDialog"
+            },
+            {
+              "kind": "method",
+              "name": "closeDialog"
+            },
+            {
+              "kind": "method",
+              "name": "acceptDialog"
+            },
+            {
+              "kind": "method",
+              "name": "renderModal"
+            },
+            {
+              "kind": "field",
+              "name": "isOpen",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "attribute": "isOpen"
+            },
+            {
+              "kind": "field",
+              "name": "header",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "attribute": "header"
+            },
+            {
+              "kind": "field",
+              "name": "text",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "attribute": "text"
+            },
+            {
+              "kind": "field",
+              "name": "acceptButton",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "attribute": "acceptButton"
+            },
+            {
+              "kind": "field",
+              "name": "rejectButton",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "attribute": "rejectButton"
+            },
+            {
+              "kind": "field",
+              "name": "accept",
+              "privacy": "public",
+              "type": {
+                "text": "function"
+              },
+              "attribute": "accept"
+            },
+            {
+              "kind": "field",
+              "name": "reject",
+              "privacy": "public",
+              "type": {
+                "text": "function"
+              },
+              "attribute": "reject"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "isOpen",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "fieldName": "isOpen"
+            },
+            {
+              "name": "header",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "fieldName": "header"
+            },
+            {
+              "name": "text",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "fieldName": "text"
+            },
+            {
+              "name": "acceptButton",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "fieldName": "acceptButton"
+            },
+            {
+              "name": "rejectButton",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "fieldName": "rejectButton"
+            },
+            {
+              "name": "accept",
+              "type": {
+                "text": "function"
+              },
+              "fieldName": "accept"
+            },
+            {
+              "name": "reject",
+              "type": {
+                "text": "function"
+              },
+              "fieldName": "reject"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "dialog-modal",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "dialog-modal",
+          "declaration": {
+            "name": "DialogModal",
+            "module": "view/components/dialog-modal.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "view/components/employee-table.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "EmployeeTable",
+          "members": [
+            {
+              "kind": "field",
+              "name": "page",
+              "type": {
+                "text": "object"
+              },
+              "default": "{\r\n    total: 1,\r\n    current: 1,\r\n    perPage: 7,\r\n    buttons: 4,\r\n    currData: [],\r\n  }"
+            },
+            {
+              "kind": "method",
+              "name": "handleEdit",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleDelete",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleDeleteConfirm"
+            },
+            {
+              "kind": "method",
+              "name": "handleDeleteReject"
+            },
+            {
+              "kind": "method",
+              "name": "handlePageChange",
+              "parameters": [
+                {
+                  "name": "page"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "getVisiblePages"
+            },
+            {
+              "kind": "method",
+              "name": "renderPagination"
+            },
+            {
+              "kind": "method",
+              "name": "renderTableWrapper",
+              "parameters": [
+                {
+                  "name": "currData"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "renderGridWrapper",
+              "parameters": [
+                {
+                  "name": "currData"
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "data",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "data"
+            },
+            {
+              "kind": "field",
+              "name": "current"
+            },
+            {
+              "kind": "field",
+              "name": "unsubscribe"
+            },
+            {
+              "kind": "field",
+              "name": "mode",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "mode"
+            },
+            {
+              "kind": "field",
+              "name": "selectedDelete",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "attribute": "selectedDelete"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "mode",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "mode"
+            },
+            {
+              "name": "data",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "data"
+            },
+            {
+              "name": "selectedDelete",
+              "type": {
+                "text": "object"
+              },
+              "fieldName": "selectedDelete"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "employee-table",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "employee-table",
+          "declaration": {
+            "name": "EmployeeTable",
+            "module": "view/components/employee-table.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "view/components/main-container.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MainContainer",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "main-container",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "main-container",
+          "declaration": {
+            "name": "MainContainer",
+            "module": "view/components/main-container.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "view/components/nav-bar.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Navbar",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nav-bar",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "nav-bar",
+          "declaration": {
+            "name": "Navbar",
+            "module": "view/components/nav-bar.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "util/store/base-component.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "BaseComponent",
+          "members": [
+            {
+              "kind": "method",
+              "name": "stateUpdated"
+            },
+            {
+              "kind": "field",
+              "name": "unsubscribe"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BaseComponent",
+          "declaration": {
+            "name": "BaseComponent",
+            "module": "util/store/base-component.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "util/store/index.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "store"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "store",
+          "declaration": {
+            "name": "store",
+            "module": "util/store/index.js"
+          }
+        }
+      ]
+    }
+  ]
+}
