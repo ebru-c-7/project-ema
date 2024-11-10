@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import { translate as t } from "lit-i18n";
 
 import "./components/employee-table.js";
 import { Router } from "@vaadin/router";
@@ -166,7 +167,7 @@ class EmployeeList extends LitElement {
     console.log("render:", this.mode);
     return html` <div>
       <header class="heading">
-        <h1>Employee List</h1>
+        <h1>${t("Employee List")}</h1>
         <div class="view">
           <button @click=${() => this.handleModeChange(viewOptions[0])}>
             ${this.renderTableIcon()}

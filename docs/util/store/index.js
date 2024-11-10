@@ -9,10 +9,7 @@ function rootReducer(state = initialState, action) {
     case "INITIAL":
       return {
         ...state,
-        data: action.payload.map((el, i) => {
-          el["First Name"] = i + 1 + el["First Name"];
-          return el;
-        }),
+        data: [...action.payload],
       };
     case "DELETE":
       const uptData = state.data.filter((el) => action.payload !== el._id);
@@ -20,6 +17,24 @@ function rootReducer(state = initialState, action) {
         ...state,
         data: uptData,
       };
+    case "ADD_NEW":
+      const addedData = [action.payload, ...state.data];
+      return {
+        ...state,
+        data: addedData,
+      };
+    case "EDIT_DATA":
+      const index = state.data.findIndex((el) => el._id === action.payload._id);
+      if (index < 0) return state;
+
+      const updData = [...state.data];
+      updData[index] = { ...action.payload };
+
+      return {
+        ...state,
+        data: updData,
+      };
+
     default:
       return state;
   }

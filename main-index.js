@@ -1,14 +1,12 @@
-// main-index.js
-
-import { LitElement, html, css } from "lit";
+import { html, css } from "lit";
 import { Router } from "@vaadin/router";
 
 import { BaseComponent } from "./util/store/base-component.js";
 import { store } from "./util/store/index.js";
+import { defaultLang, initializeLang } from "./util/localization/index.js";
 
 import "./view/employee-list.js";
-import "./view/add-new.js";
-import "./view/edit-item.js";
+import "./view/form-item.js";
 
 import "./view/components/main-container.js";
 
@@ -21,9 +19,10 @@ class LitRealWorldIndex extends BaseComponent {
 
     const router = new Router(this.shadowRoot.querySelector("#outlet"));
     router.setRoutes([
+      // { path: "/", component: "add-new" },
       { path: "/", component: "employee-list" },
-      { path: "/add-new", component: "add-new" },
-      { path: "/edit/:id", component: "edit-item" },
+      { path: "/add-new", component: "form-item" },
+      { path: "/edit/:id", component: "form-item" },
       { path: "(.*)", redirect: "/" },
     ]);
 
@@ -32,6 +31,8 @@ class LitRealWorldIndex extends BaseComponent {
 
   loadData() {
     console.log("loadData");
+    initializeLang(defaultLang);
+
     fetch("/assets/data/employees.json")
       .then((res) => res.json())
       .then((empData) => {

@@ -6,8 +6,8 @@
     "Date of Birth": "1964-08-19",
     "Phone": "5300000000",
     "Email": "suphi_i̇nönü@test.com",
-    "Department": "Engineering",
-    "Position": "Project Manager",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "ea24a6bf-9f99-4b5b-af76-4dea69b00de5"
   },
   {
@@ -17,8 +17,8 @@
     "Date of Birth": "2003-05-31",
     "Phone": "5300000000",
     "Email": "bellisan_gül@test.com",
-    "Department": "Sales",
-    "Position": "Sales Representative",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "a95dc023-0b98-4bef-8d17-70511f1190ba"
   },
   {
@@ -28,8 +28,8 @@
     "Date of Birth": "1994-05-05",
     "Phone": "5300000000",
     "Email": "huban_türk@test.com",
-    "Department": "Marketing",
-    "Position": "Marketing Coordinator",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "6e4f0acb-7bf5-4a64-a672-6e2e69a131fa"
   },
   {
@@ -39,8 +39,8 @@
     "Date of Birth": "1987-01-15",
     "Phone": "5300000000",
     "Email": "nurdeniz_akçay@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Manager",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "95d799a3-4543-411f-8ee5-80fe28e683de"
   },
   {
@@ -50,8 +50,8 @@
     "Date of Birth": "1986-01-26",
     "Phone": "5300000000",
     "Email": "tan_i̇nönü@test.com",
-    "Department": "Human Resources",
-    "Position": "Recruiter",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "4755e9c0-078d-477f-999d-86fbebd36ca2"
   },
   {
@@ -61,8 +61,8 @@
     "Date of Birth": "1988-10-31",
     "Phone": "5300000000",
     "Email": "süvari_soylu@test.com",
-    "Department": "IT Support",
-    "Position": "IT Support Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "5bda1f00-acc9-48cb-9583-d0cafbd31e26"
   },
   {
@@ -72,8 +72,8 @@
     "Date of Birth": "1994-02-19",
     "Phone": "5300000000",
     "Email": "koçak_güçlü@test.com",
-    "Department": "Marketing",
-    "Position": "Marketing Coordinator",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "fb6ef47a-ada3-4520-a350-6e5d2e68ec4f"
   },
   {
@@ -83,8 +83,8 @@
     "Date of Birth": "1968-04-21",
     "Phone": "5300000000",
     "Email": "özaslan_duran@test.com",
-    "Department": "Marketing",
-    "Position": "Marketing Coordinator",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "4c3c6801-0b57-4ddc-a704-1ea101b0ce7c"
   },
   {
@@ -94,8 +94,8 @@
     "Date of Birth": "1977-11-27",
     "Phone": "5300000000",
     "Email": "hacile_mansız@test.com",
-    "Department": "Legal",
-    "Position": "Compliance Officer",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "55841ec0-baf9-443b-b741-9ebee1b0d6da"
   },
   {
@@ -105,8 +105,8 @@
     "Date of Birth": "1979-12-06",
     "Phone": "5300000000",
     "Email": "canberk_yaman@test.com",
-    "Department": "Finance",
-    "Position": "Accountant",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "7480a567-1689-4c64-a4a1-7a26788bb6af"
   },
   {
@@ -116,8 +116,8 @@
     "Date of Birth": "1991-09-05",
     "Phone": "5300000000",
     "Email": "sevdi_seven@test.com",
-    "Department": "Product Development",
-    "Position": "Quality Assurance",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "77213944-7c29-4592-8cdc-0528fb14777e"
   },
   {
@@ -127,8 +127,8 @@
     "Date of Birth": "1968-11-11",
     "Phone": "5300000000",
     "Email": "yurdaser_gülen@test.com",
-    "Department": "Customer Service",
-    "Position": "Customer Support Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "6e814276-2ad1-4765-b8a6-635042850f8a"
   },
   {
@@ -138,8 +138,8 @@
     "Date of Birth": "1991-07-13",
     "Phone": "5300000000",
     "Email": "alattin_arsoy@test.com",
-    "Department": "Sales",
-    "Position": "Account Executive",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "2107a52c-e4a9-4383-8317-ec381a34a46e"
   },
   {
@@ -149,8 +149,8 @@
     "Date of Birth": "1991-09-21",
     "Phone": "5300000000",
     "Email": "hami_manço@test.com",
-    "Department": "Finance",
-    "Position": "Financial Analyst",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "4f1793fd-9d7d-45c5-ac96-c7b86c0abfaa"
   },
   {
@@ -160,8 +160,8 @@
     "Date of Birth": "2000-06-15",
     "Phone": "5300000000",
     "Email": "yaşattin_yüksel@test.com",
-    "Department": "Legal",
-    "Position": "Corporate Counsel",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "bb4c27af-1eda-467e-bb62-a828bfa64af1"
   },
   {
@@ -171,8 +171,8 @@
     "Date of Birth": "1985-04-02",
     "Phone": "5300000000",
     "Email": "oktüremiş_fırat@test.com",
-    "Department": "Marketing",
-    "Position": "Marketing Coordinator",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "5b60de2e-3469-4ba2-8cc3-62f7f82fa22b"
   },
   {
@@ -182,8 +182,8 @@
     "Date of Birth": "1985-03-10",
     "Phone": "5300000000",
     "Email": "temime_ülker@test.com",
-    "Department": "Operations",
-    "Position": "Warehouse Supervisor",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "d2685380-47c4-49a0-8f9f-e932bd084024"
   },
   {
@@ -193,8 +193,8 @@
     "Date of Birth": "2002-11-11",
     "Phone": "5300000000",
     "Email": "koldan_akçay@test.com",
-    "Department": "Sales",
-    "Position": "Account Executive",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "0ed2ab61-3ba6-4bca-8f89-8711d44847f7"
   },
   {
@@ -204,8 +204,8 @@
     "Date of Birth": "1982-08-07",
     "Phone": "5300000000",
     "Email": "gülper_çamurcuoğlu@test.com",
-    "Department": "Engineering",
-    "Position": "Project Manager",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "a72eb8ec-a03e-46d9-a1fe-91fc28546700"
   },
   {
@@ -215,8 +215,8 @@
     "Date of Birth": "1973-08-29",
     "Phone": "5300000000",
     "Email": "argu_karadeniz@test.com",
-    "Department": "Finance",
-    "Position": "Finance Manager",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "499d3fa2-c6aa-44cc-ba00-7e9fcbd2606d"
   },
   {
@@ -226,8 +226,8 @@
     "Date of Birth": "1969-03-08",
     "Phone": "5300000000",
     "Email": "zemzem_hançer@test.com",
-    "Department": "Product Development",
-    "Position": "Quality Assurance",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "5e0ba8d3-bb57-4bd4-99ff-778ac115fe86"
   },
   {
@@ -237,8 +237,8 @@
     "Date of Birth": "1992-05-24",
     "Phone": "5300000000",
     "Email": "vedat_bilge@test.com",
-    "Department": "Operations",
-    "Position": "Supply Chain Manager",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "d830a99b-e82e-45ee-bb56-940115adc464"
   },
   {
@@ -248,8 +248,8 @@
     "Date of Birth": "1994-06-10",
     "Phone": "5300000000",
     "Email": "efser_hançer@test.com",
-    "Department": "Legal",
-    "Position": "Legal Assistant",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "54ed228c-594d-4038-ba0d-0f87939d6a33"
   },
   {
@@ -259,8 +259,8 @@
     "Date of Birth": "1974-01-15",
     "Phone": "5300000000",
     "Email": "aybet_demirel@test.com",
-    "Department": "Customer Service",
-    "Position": "Customer Support Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "830ff5f2-a43b-4d29-93e3-975d9be50742"
   },
   {
@@ -270,8 +270,8 @@
     "Date of Birth": "1978-07-11",
     "Phone": "5300000000",
     "Email": "çağveren_korutürk@test.com",
-    "Department": "Customer Service",
-    "Position": "Customer Support Specialist",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "70faea58-1b45-4f5d-9659-13de99b48ca0"
   },
   {
@@ -281,8 +281,8 @@
     "Date of Birth": "1965-10-22",
     "Phone": "5300000000",
     "Email": "güçlüer_seven@test.com",
-    "Department": "Operations",
-    "Position": "Supply Chain Manager",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "24ce4fc7-5ef4-443d-8852-39774dadc4f5"
   },
   {
@@ -292,8 +292,8 @@
     "Date of Birth": "2000-11-23",
     "Phone": "5300000000",
     "Email": "toköz_şener@test.com",
-    "Department": "Finance",
-    "Position": "Accountant",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "f163e6b4-e7d0-4d7a-b508-798653dd95ca"
   },
   {
@@ -303,8 +303,8 @@
     "Date of Birth": "2003-05-03",
     "Phone": "5300000000",
     "Email": "tanyolaç_hayrioğlu@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Manager",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "30b04741-15f4-4eb7-b334-0e55dcd6b0fb"
   },
   {
@@ -314,8 +314,8 @@
     "Date of Birth": "1997-05-11",
     "Phone": "5300000000",
     "Email": "kalgay_i̇nönü@test.com",
-    "Department": "Finance",
-    "Position": "Finance Manager",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "16572c00-fe2e-4015-a969-c7cd851e6543"
   },
   {
@@ -325,8 +325,8 @@
     "Date of Birth": "1964-12-12",
     "Phone": "5300000000",
     "Email": "mertel_erdoğan@test.com",
-    "Department": "Customer Service",
-    "Position": "Call Center Representative",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "96f3d479-3d00-4a34-9b13-ae97290be98c"
   },
   {
@@ -336,8 +336,8 @@
     "Date of Birth": "2000-01-31",
     "Phone": "5300000000",
     "Email": "simber_hançer@test.com",
-    "Department": "Customer Service",
-    "Position": "Call Center Representative",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "3cf79a79-c0da-4a25-876c-f8e0603910c3"
   },
   {
@@ -347,8 +347,8 @@
     "Date of Birth": "1970-08-12",
     "Phone": "5300000000",
     "Email": "serda_hayrioğlu@test.com",
-    "Department": "Product Development",
-    "Position": "Product Designer",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "ee711308-e4c7-4f23-895c-0e39d2a8a479"
   },
   {
@@ -358,8 +358,8 @@
     "Date of Birth": "1975-02-02",
     "Phone": "5300000000",
     "Email": "ticen_akçay@test.com",
-    "Department": "Operations",
-    "Position": "Operations Coordinator",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "3d95427c-7580-40da-9c7a-896f5009dd10"
   },
   {
@@ -369,8 +369,8 @@
     "Date of Birth": "1978-02-02",
     "Phone": "5300000000",
     "Email": "burcuhan_bilir@test.com",
-    "Department": "IT Support",
-    "Position": "Help Desk Technician",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "2c36a24f-9393-4ae2-9fac-b84ddb0c21c7"
   },
   {
@@ -380,8 +380,8 @@
     "Date of Birth": "1975-12-19",
     "Phone": "5300000000",
     "Email": "otay_çamurcuoğlu@test.com",
-    "Department": "Product Development",
-    "Position": "Product Designer",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "7b59b9f8-7819-45a6-b264-3bf166dc27c5"
   },
   {
@@ -391,8 +391,8 @@
     "Date of Birth": "1983-12-12",
     "Phone": "5300000000",
     "Email": "duruöz_i̇hsanoğlu@test.com",
-    "Department": "Engineering",
-    "Position": "Software Engineer",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "cb40e7cc-c5f7-46bb-9574-55bc419625fb"
   },
   {
@@ -402,8 +402,8 @@
     "Date of Birth": "1970-11-29",
     "Phone": "5300000000",
     "Email": "ayşan_durmuş@test.com",
-    "Department": "Legal",
-    "Position": "Corporate Counsel",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "3c795898-f82e-4bc1-a651-929647875c00"
   },
   {
@@ -413,8 +413,8 @@
     "Date of Birth": "1973-01-04",
     "Phone": "5300000000",
     "Email": "divan_fırat@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "a1c2a5f7-a529-4f0c-ad71-bbfec7d1ac83"
   },
   {
@@ -424,8 +424,8 @@
     "Date of Birth": "2004-06-08",
     "Phone": "5300000000",
     "Email": "muhip_duran@test.com",
-    "Department": "Finance",
-    "Position": "Finance Manager",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "c0439f4e-4c83-4d59-9647-d946156ee97e"
   },
   {
@@ -435,8 +435,8 @@
     "Date of Birth": "1972-02-09",
     "Phone": "5300000000",
     "Email": "gülenay_seven@test.com",
-    "Department": "Human Resources",
-    "Position": "Recruiter",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "13545bba-717c-4edb-90d7-518b1ae5939f"
   },
   {
@@ -446,8 +446,8 @@
     "Date of Birth": "1999-09-02",
     "Phone": "5300000000",
     "Email": "güverçin_çamurcuoğlu@test.com",
-    "Department": "Marketing",
-    "Position": "SEO Specialist",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "af63ae11-9ed3-45f6-82f6-c7ce30125e57"
   },
   {
@@ -457,8 +457,8 @@
     "Date of Birth": "2002-10-08",
     "Phone": "5300000000",
     "Email": "akboğa_hayrioğlu@test.com",
-    "Department": "Customer Service",
-    "Position": "Customer Support Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "c4ed4e18-121d-45bc-bf2b-93de064655f2"
   },
   {
@@ -468,8 +468,8 @@
     "Date of Birth": "1992-02-13",
     "Phone": "5300000000",
     "Email": "cezayir_aksu@test.com",
-    "Department": "Engineering",
-    "Position": "Software Engineer",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "fd9cc5a8-e161-4c9a-aad8-28d1b63a0e16"
   },
   {
@@ -479,8 +479,8 @@
     "Date of Birth": "1974-01-29",
     "Phone": "5300000000",
     "Email": "seyhan_akçay@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "d551be49-66cd-414c-a7af-eea0bf5bafe2"
   },
   {
@@ -490,8 +490,8 @@
     "Date of Birth": "1979-10-29",
     "Phone": "5300000000",
     "Email": "fayize_çorlu@test.com",
-    "Department": "IT Support",
-    "Position": "IT Support Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "fcc14b38-cf2e-48c2-89f8-208ae4973cc9"
   },
   {
@@ -501,8 +501,8 @@
     "Date of Birth": "1982-11-09",
     "Phone": "5300000000",
     "Email": "barışcan_i̇hsanoğlu@test.com",
-    "Department": "Product Development",
-    "Position": "Product Designer",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "7182dccf-b158-4802-9319-f8e03debd8e5"
   },
   {
@@ -512,8 +512,8 @@
     "Date of Birth": "1985-05-07",
     "Phone": "5300000000",
     "Email": "razı_sezgin@test.com",
-    "Department": "Sales",
-    "Position": "Sales Representative",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "3493aac5-714f-4d35-b49b-4d596a660e6c"
   },
   {
@@ -523,8 +523,8 @@
     "Date of Birth": "1968-01-26",
     "Phone": "5300000000",
     "Email": "güngören_aslan@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Manager",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "c08e70ea-45d5-4e96-a2f1-9f91da3ed82e"
   },
   {
@@ -534,8 +534,8 @@
     "Date of Birth": "1994-07-19",
     "Phone": "5300000000",
     "Email": "teksoy_hayrioğlu@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Specialist",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "4ce41534-2d9c-4aa4-a551-f65eccab207d"
   },
   {
@@ -545,8 +545,8 @@
     "Date of Birth": "1970-04-28",
     "Phone": "5300000000",
     "Email": "meryeme_manço@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Manager",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "3df765be-20d6-4e44-b103-701ca81181b0"
   },
   {
@@ -556,8 +556,8 @@
     "Date of Birth": "1974-12-25",
     "Phone": "5300000000",
     "Email": "köktaş_arsoy@test.com",
-    "Department": "Engineering",
-    "Position": "Product Engineer",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "8198b562-90cc-409c-a022-12f165ae101d"
   },
   {
@@ -567,8 +567,8 @@
     "Date of Birth": "1981-02-04",
     "Phone": "5300000000",
     "Email": "fayize_öcalan@test.com",
-    "Department": "Operations",
-    "Position": "Supply Chain Manager",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "2d134a15-10f0-4a87-8c27-5c6eeb635383"
   },
   {
@@ -578,8 +578,8 @@
     "Date of Birth": "1974-03-22",
     "Phone": "5300000000",
     "Email": "barsen_ergül@test.com",
-    "Department": "Customer Service",
-    "Position": "Customer Support Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "ae54b6ae-7c11-4489-bacb-261546f3739f"
   },
   {
@@ -589,8 +589,8 @@
     "Date of Birth": "1977-06-29",
     "Phone": "5300000000",
     "Email": "giz_fırat@test.com",
-    "Department": "Engineering",
-    "Position": "Software Engineer",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "b9cfa229-7786-47c4-bfa3-546ca7e8328d"
   },
   {
@@ -600,8 +600,8 @@
     "Date of Birth": "1969-02-08",
     "Phone": "5300000000",
     "Email": "beyler_akçay@test.com",
-    "Department": "Customer Service",
-    "Position": "Call Center Representative",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "b498386c-1a8a-48fa-b064-e8690f3f9f21"
   },
   {
@@ -611,8 +611,8 @@
     "Date of Birth": "1967-07-31",
     "Phone": "5300000000",
     "Email": "birgit_sakarya@test.com",
-    "Department": "Operations",
-    "Position": "Supply Chain Manager",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "397fc9d2-ac5c-4dba-b017-26a39d3b465c"
   },
   {
@@ -622,8 +622,8 @@
     "Date of Birth": "1973-02-09",
     "Phone": "5300000000",
     "Email": "selatin_akdeniz@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "67d6af47-6986-46b2-bf4c-f22dd07fa318"
   },
   {
@@ -633,8 +633,8 @@
     "Date of Birth": "1999-03-08",
     "Phone": "5300000000",
     "Email": "ayülker_çorlu@test.com",
-    "Department": "Customer Service",
-    "Position": "Call Center Representative",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "5d37f52e-b090-4f55-bcfe-2a1f39259d14"
   },
   {
@@ -644,8 +644,8 @@
     "Date of Birth": "1983-03-22",
     "Phone": "5300000000",
     "Email": "ünsever_akgündüz@test.com",
-    "Department": "Legal",
-    "Position": "Legal Assistant",
+    "Department": "Analytics",
+    "Position": "Senior",
     "_id": "7fa27e82-c62a-40f5-b078-38901742ab68"
   },
   {
@@ -655,8 +655,8 @@
     "Date of Birth": "1975-06-18",
     "Phone": "5300000000",
     "Email": "kızıl_yılmaz@test.com",
-    "Department": "Product Development",
-    "Position": "Product Designer",
+    "Department": "Analytics",
+    "Position": "Senior",
     "_id": "dac69134-c0fc-4770-9286-d7b5fa722b48"
   },
   {
@@ -666,8 +666,8 @@
     "Date of Birth": "1998-04-04",
     "Phone": "5300000000",
     "Email": "ervaniye_fırat@test.com",
-    "Department": "Customer Service",
-    "Position": "Call Center Representative",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "a0aa7536-be4d-4043-a59a-04524dd19c0c"
   },
   {
@@ -677,8 +677,8 @@
     "Date of Birth": "1977-10-04",
     "Phone": "5300000000",
     "Email": "nurtaç_öcalan@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Specialist",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "c115d93e-12ab-49a3-956f-cb1ed8c8e165"
   },
   {
@@ -688,8 +688,8 @@
     "Date of Birth": "1985-01-29",
     "Phone": "5300000000",
     "Email": "behrem_akçay@test.com",
-    "Department": "Engineering",
-    "Position": "Project Manager",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "f55034bb-8536-487e-bdd4-198c71476839"
   },
   {
@@ -699,8 +699,8 @@
     "Date of Birth": "1977-04-18",
     "Phone": "5300000000",
     "Email": "müğber_korutürk@test.com",
-    "Department": "Marketing",
-    "Position": "Marketing Coordinator",
+    "Department": "Analytics",
+    "Position": "Senior",
     "_id": "afb7f8a4-8dc2-46d1-b0a4-bc6b90129d0e"
   },
   {
@@ -710,8 +710,8 @@
     "Date of Birth": "1977-02-16",
     "Phone": "5300000000",
     "Email": "şükri_hayrioğlu@test.com",
-    "Department": "Legal",
-    "Position": "Legal Assistant",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "f8a148ad-92e0-46f9-8cf7-975f970f2460"
   },
   {
@@ -721,8 +721,8 @@
     "Date of Birth": "1979-07-01",
     "Phone": "5300000000",
     "Email": "sezginbaş_tarhan@test.com",
-    "Department": "Operations",
-    "Position": "Warehouse Supervisor",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "3a481ab1-2fe0-4325-9944-943ae559bae0"
   },
   {
@@ -732,8 +732,8 @@
     "Date of Birth": "1985-06-07",
     "Phone": "5300000000",
     "Email": "haluk_akçay@test.com",
-    "Department": "Sales",
-    "Position": "Sales Representative",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "af709380-2382-470b-aac2-f01e1d6eadb2"
   },
   {
@@ -743,8 +743,8 @@
     "Date of Birth": "1993-10-11",
     "Phone": "5300000000",
     "Email": "erenalp_sezer@test.com",
-    "Department": "Marketing",
-    "Position": "Marketing Coordinator",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "cabb5bcc-5efc-4c28-835a-4e59de49d782"
   },
   {
@@ -754,8 +754,8 @@
     "Date of Birth": "2000-06-08",
     "Phone": "5300000000",
     "Email": "yamin_ülker@test.com",
-    "Department": "Human Resources",
-    "Position": "Recruiter",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "018407eb-b934-4d1d-83ba-93d859e0120f"
   },
   {
@@ -765,8 +765,8 @@
     "Date of Birth": "1993-04-30",
     "Phone": "5300000000",
     "Email": "galip_aslan@test.com",
-    "Department": "Finance",
-    "Position": "Accountant",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "796afae0-b9f7-46cb-a93f-e7d05d4d6f71"
   },
   {
@@ -776,8 +776,8 @@
     "Date of Birth": "1997-03-18",
     "Phone": "5300000000",
     "Email": "bilgen_seven@test.com",
-    "Department": "Legal",
-    "Position": "Corporate Counsel",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "9384dad3-12f5-48da-865c-b690d0893fd8"
   },
   {
@@ -787,8 +787,8 @@
     "Date of Birth": "1981-03-21",
     "Phone": "5300000000",
     "Email": "fadile_akçay@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Manager",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "ee254dde-c0d1-4a1a-bba9-2a804c636fd5"
   },
   {
@@ -798,8 +798,8 @@
     "Date of Birth": "1968-01-26",
     "Phone": "5300000000",
     "Email": "hıfzullah_akçay@test.com",
-    "Department": "Legal",
-    "Position": "Compliance Officer",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "42223eb9-014f-49f2-99e2-da05676a8eca"
   },
   {
@@ -809,8 +809,8 @@
     "Date of Birth": "1987-05-05",
     "Phone": "5300000000",
     "Email": "hıfzullah_şama@test.com",
-    "Department": "Product Development",
-    "Position": "Product Manager",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "9ae30dd8-501f-4e41-8591-acfbcee08f78"
   },
   {
@@ -820,8 +820,8 @@
     "Date of Birth": "1974-11-05",
     "Phone": "5300000000",
     "Email": "fehim_şener@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Specialist",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "cf828d6e-f692-4690-b6a0-92205efa2d8b"
   },
   {
@@ -831,8 +831,8 @@
     "Date of Birth": "1965-01-28",
     "Phone": "5300000000",
     "Email": "onuker_durdu@test.com",
-    "Department": "Product Development",
-    "Position": "Product Designer",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "5663aed6-97e5-463e-ad8e-eed2cd73cca3"
   },
   {
@@ -842,8 +842,8 @@
     "Date of Birth": "1990-10-07",
     "Phone": "5300000000",
     "Email": "baydu_şensoy@test.com",
-    "Department": "Legal",
-    "Position": "Compliance Officer",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "ce8ad220-cd96-466f-9e72-a8f2067ef5d9"
   },
   {
@@ -853,8 +853,8 @@
     "Date of Birth": "1971-11-29",
     "Phone": "5300000000",
     "Email": "ülfet_fırat@test.com",
-    "Department": "Legal",
-    "Position": "Compliance Officer",
+    "Department": "Analytics",
+    "Position": "Senior",
     "_id": "c69332b0-fe83-4d2c-9b5e-7266bfacda9c"
   },
   {
@@ -864,8 +864,8 @@
     "Date of Birth": "1988-08-16",
     "Phone": "5300000000",
     "Email": "bilgen_sakarya@test.com",
-    "Department": "Engineering",
-    "Position": "Software Engineer",
+    "Department": "Analytics",
+    "Position": "Senior",
     "_id": "3c5cceed-c8a3-4054-b9de-78e573bd2213"
   },
   {
@@ -875,8 +875,8 @@
     "Date of Birth": "1963-11-29",
     "Phone": "5300000000",
     "Email": "erik_bilge@test.com",
-    "Department": "Sales",
-    "Position": "Sales Representative",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "09d7ca56-2053-46b2-80df-0a0dd837c667"
   },
   {
@@ -886,8 +886,8 @@
     "Date of Birth": "1997-03-05",
     "Phone": "5300000000",
     "Email": "i̇şcan_seven@test.com",
-    "Department": "Operations",
-    "Position": "Operations Coordinator",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "574b80da-f359-480f-a26c-4b149f5989d6"
   },
   {
@@ -897,8 +897,8 @@
     "Date of Birth": "2001-12-09",
     "Phone": "5300000000",
     "Email": "uludağ_bilge@test.com",
-    "Department": "Product Development",
-    "Position": "Quality Assurance",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "b5428c3f-f4b1-4f2e-82d7-eb41cd98cc14"
   },
   {
@@ -908,8 +908,8 @@
     "Date of Birth": "2002-03-10",
     "Phone": "5300000000",
     "Email": "adıgün_arsoy@test.com",
-    "Department": "Product Development",
-    "Position": "Product Designer",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "c9dae5da-0d17-4aa0-946e-ae0a3c969c31"
   },
   {
@@ -919,8 +919,8 @@
     "Date of Birth": "1993-11-03",
     "Phone": "5300000000",
     "Email": "şayan_güçlü@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Manager",
+    "Department": "Analytics",
+    "Position": "Senior",
     "_id": "060bc2ed-5a68-40af-8d0f-4df802dc42a6"
   },
   {
@@ -930,8 +930,8 @@
     "Date of Birth": "1972-04-03",
     "Phone": "5300000000",
     "Email": "beren_yüksel@test.com",
-    "Department": "Operations",
-    "Position": "Supply Chain Manager",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "70cd3903-f08a-4e62-a19c-a2f91507a234"
   },
   {
@@ -941,8 +941,8 @@
     "Date of Birth": "2004-10-20",
     "Phone": "5300000000",
     "Email": "çelem_soylu@test.com",
-    "Department": "Product Development",
-    "Position": "Quality Assurance",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "a2fcd30b-abb5-4c45-8ad1-fdc9d3180cb1"
   },
   {
@@ -952,8 +952,8 @@
     "Date of Birth": "1977-05-28",
     "Phone": "5300000000",
     "Email": "alpsü_çamurcuoğlu@test.com",
-    "Department": "Sales",
-    "Position": "Account Executive",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "06897b3c-8da0-4360-8645-dd4390eeaed0"
   },
   {
@@ -963,8 +963,8 @@
     "Date of Birth": "1973-04-24",
     "Phone": "5300000000",
     "Email": "boynak_ülker@test.com",
-    "Department": "Product Development",
-    "Position": "Quality Assurance",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "f22a30ab-46a6-4c06-8ccd-e73ecb1a7440"
   },
   {
@@ -974,8 +974,8 @@
     "Date of Birth": "1998-01-04",
     "Phone": "5300000000",
     "Email": "kutgün_dumanlı@test.com",
-    "Department": "Legal",
-    "Position": "Corporate Counsel",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "c6ffe5d3-b354-4e8d-bc34-3b5f21174196"
   },
   {
@@ -985,8 +985,8 @@
     "Date of Birth": "1994-07-23",
     "Phone": "5300000000",
     "Email": "birgül_yılmaz@test.com",
-    "Department": "Legal",
-    "Position": "Compliance Officer",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "86043a99-c9fa-48b4-85e7-90f3e4473190"
   },
   {
@@ -996,8 +996,8 @@
     "Date of Birth": "1985-10-10",
     "Phone": "5300000000",
     "Email": "berran_tarhan@test.com",
-    "Department": "Customer Service",
-    "Position": "Customer Support Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "ee748f6e-59a0-49f2-988f-daa0b6fec063"
   },
   {
@@ -1007,8 +1007,8 @@
     "Date of Birth": "1966-07-11",
     "Phone": "5300000000",
     "Email": "sevginur_türk@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Specialist",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "39fd9b1e-77c1-4710-b243-65a457251dc5"
   },
   {
@@ -1018,8 +1018,8 @@
     "Date of Birth": "1979-06-10",
     "Phone": "5300000000",
     "Email": "i̇mge_korutürk@test.com",
-    "Department": "Human Resources",
-    "Position": "HR Manager",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "ce3a1a56-3cd8-4e0e-8d38-132f5e9ff1b9"
   },
   {
@@ -1029,8 +1029,8 @@
     "Date of Birth": "1998-11-14",
     "Phone": "5300000000",
     "Email": "yeneral_zorlu@test.com",
-    "Department": "Marketing",
-    "Position": "Marketing Coordinator",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "0ec2d4e4-1a5a-450c-b137-7399b7d79a8a"
   },
   {
@@ -1040,8 +1040,8 @@
     "Date of Birth": "1983-07-08",
     "Phone": "5300000000",
     "Email": "umman_sezgin@test.com",
-    "Department": "Customer Service",
-    "Position": "Customer Support Specialist",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "073039d9-de0f-457c-9986-79e2fffb66ec"
   },
   {
@@ -1051,8 +1051,8 @@
     "Date of Birth": "1997-07-07",
     "Phone": "5300000000",
     "Email": "nezize_tevetoğlu@test.com",
-    "Department": "Operations",
-    "Position": "Operations Coordinator",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "82e56d77-8ac0-43e0-9782-59cb400f3669"
   },
   {
@@ -1062,8 +1062,8 @@
     "Date of Birth": "1972-01-07",
     "Phone": "5300000000",
     "Email": "ülküdeş_akçay@test.com",
-    "Department": "IT Support",
-    "Position": "Help Desk Technician",
+    "Department": "Analytics",
+    "Position": "Junior",
     "_id": "17bf64e7-e991-41b6-9a88-8ccd8c3a4c80"
   },
   {
@@ -1073,8 +1073,8 @@
     "Date of Birth": "1983-09-28",
     "Phone": "5300000000",
     "Email": "yazgül_mansız@test.com",
-    "Department": "Operations",
-    "Position": "Operations Coordinator",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "be574ce5-5fd2-4db0-be71-17d3fde46dc6"
   },
   {
@@ -1084,8 +1084,8 @@
     "Date of Birth": "1976-08-30",
     "Phone": "5300000000",
     "Email": "okbay_çetin@test.com",
-    "Department": "Marketing",
-    "Position": "Marketing Coordinator",
+    "Department": "Tech",
+    "Position": "Senior",
     "_id": "642639ff-8dcb-4ddf-8913-df2242c5cf0b"
   },
   {
@@ -1095,8 +1095,8 @@
     "Date of Birth": "1985-09-13",
     "Phone": "5300000000",
     "Email": "hazrat_ergül@test.com",
-    "Department": "IT Support",
-    "Position": "Help Desk Technician",
+    "Department": "Tech",
+    "Position": "Junior",
     "_id": "a1c5ec7a-26b3-47a1-9c87-df859017541e"
   }
 ]

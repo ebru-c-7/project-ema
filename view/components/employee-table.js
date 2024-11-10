@@ -1,6 +1,7 @@
 import { LitElement, html, css } from "lit";
 import { property } from "lit/decorators.js";
 import { v4 as uuidv4 } from "uuid";
+import { translate as t } from "lit-i18n";
 
 import { store } from "../../util/store/index.js";
 import { convertDate, formatPhoneNumber } from "../../util/index.js";
@@ -28,6 +29,8 @@ class EmployeeTable extends LitElement {
         border-radius: 5px;
 
         overflow: auto;
+
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
 
       .tablewrapper {
@@ -470,24 +473,25 @@ class EmployeeTable extends LitElement {
           <td>${convertDate(el["Date of Birth"])}</td>
           <td>${formatPhoneNumber(el["Phone"])}</td>
           <td>${el["Email"]}</td>
-          <td>${el["Department"]}</td>
-          <td>${el["Position"]}</td>
+          <td>${t(el["Department"])}</td>
+          <td>${t(el["Position"])}</td>
+          ${t(el[""])}
           <td>
             <button
-              title="Edit"
+              title=${t("Edit")}
               @click=${function () {
                 this.handleEdit(el);
               }}
             >
-              <img src=${"/assets/img/edit.svg"} alt="edit" />
+              <img src=${"/assets/img/edit.svg"} alt=${t("Edit")} />
             </button>
             <button
-              title="Delete"
+              title=${t("Delete")}
               @click=${function () {
                 this.handleDelete(el);
               }}
             >
-              <img src=${"/assets/img/delete.svg"} alt="delete" />
+              <img src=${"/assets/img/delete.svg"} alt=${t("Delete")} />
             </button>
           </td>
         </tr>
@@ -499,15 +503,15 @@ class EmployeeTable extends LitElement {
         <table>
           <thead>
             <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Date of Employment</th>
-              <th>Date of Birth</th>
-              <th>Phone</th>
-              <th>Email</th>
-              <th>Department</th>
-              <th>Position</th>
-              <th>Actions</th>
+              <th>${t("First Name")}</th>
+              <th>${t("Last Name")}</th>
+              <th>${t("Date of Employment")}</th>
+              <th>${t("Date of Birth")}</th>
+              <th>${t("Phone")}</th>
+              <th>${t("Email")}</th>
+              <th>${t("Department")}</th>
+              <th>${t("Position")}</th>
+              <th>${t("Actions")}</th>
             </tr>
           </thead>
           <tbody>
@@ -521,48 +525,48 @@ class EmployeeTable extends LitElement {
   renderGridWrapper(currData) {
     let gridItems = currData.map((el) => {
       return html`<div class="grid-item">
-        <h4>${el.index} ${el["First Name"]} ${el["Last Name"]}</h4>
+        <h4>${el["First Name"]} ${el["Last Name"]}</h4>
         <div>
-          <span>Date of Employment: </span>
+          <span>${t("Date of Employment")}: </span>
           <span>${convertDate(el["Date of Employment"])}</span>
         </div>
         <div>
-          <span>Date of Birth: </span>
+          <span>${t("Date of Birth")}: </span>
           <span>${convertDate(el["Date of Birth"])}</span>
         </div>
         <div>
-          <span>Phone: </span>
+          <span>${t("Phone")}: </span>
           <span>${formatPhoneNumber(el["Phone"])}</span>
         </div>
         <div>
-          <span>Email: </span>
+          <span>${t("Email")}: </span>
           <span>${el["Email"]}</span>
         </div>
         <div>
-          <span>Department: </span>
-          <span>${el["Department"]}</span>
+          <span>${t("Department")}: </span>
+          <span>${t(el["Department"])}</span>
         </div>
         <div>
-          <span>Position: </span>
-          <span>${el["Position"]}</span>
+          <span>${t("Position")}: </span>
+          <span>${t(el["Position"])}</span>
         </div>
 
         <div>
           <button
-            title="Edit"
+            title=${t("Edit")}
             @click=${function () {
               this.handleEdit(el);
             }}
           >
-            <img src=${"/assets/img/edit.svg"} alt="edit" />
+            <img src=${"/assets/img/edit.svg"} alt=${t("Edit")} />
           </button>
           <button
-            title="Delete"
+            title=${t("Delete")}
             @click=${function () {
               this.handleDelete(el);
             }}
           >
-            <img src=${"/assets/img/delete.svg"} alt="delete" />
+            <img src=${"/assets/img/delete.svg"} alt=${t("Delete")} />
           </button>
         </div>
       </div>`;
@@ -584,10 +588,12 @@ class EmployeeTable extends LitElement {
       console.log("selectedDelete: ", this.selectedDelete);
       const name = `${this.selectedDelete["First Name"]} ${this.selectedDelete["Last Name"]}`;
       modal = html`<dialog-modal
-        .header=${"Are you sure?"}
-        .text=${`Selected employee record of ${name} will be deleted.`}
-        .acceptButton=${"Accept"}
-        .rejectButton=${"Reject"}
+        .header=${t("Are you sure?")}
+        .text=${t(`Selected employee record of {{name}} will be deleted.`, {
+          name: name,
+        })}
+        .acceptButton=${t("Accept")}
+        .rejectButton=${t("Reject")}
         .accept=${() => this.handleDeleteConfirm()}
         .reject=${() => this.handleDeleteReject()}
       ></dialog-modal>`;

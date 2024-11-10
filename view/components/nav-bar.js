@@ -1,6 +1,13 @@
 import { LitElement, html, css } from "lit";
+import { translate as t } from "lit-i18n";
+import i18next from "i18next";
+import { LANGS } from "../../util/localization";
+import { store } from "../../util/store";
+import { NAVBAR_LINKS } from "../../util";
 
 class Navbar extends LitElement {
+  currentPath = window.router.location.pathname;
+
   static styles = [
     css`
       :host {
@@ -46,6 +53,8 @@ class Navbar extends LitElement {
         list-style: none;
 
         display: flex;
+        align-items: center;
+
         column-gap: 10px;
       }
 
@@ -55,23 +64,67 @@ class Navbar extends LitElement {
         color: var(--main-color);
       }
 
+      a.active {
+        font-weight: bold;
+      }
+
       select {
         -webkit-appearance: none;
         -moz-appearance: none;
-        text-indent: 1px;
-        text-overflow: "";
 
-        padding: 0 10px;
+        appearance: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: white;
 
-        border: none;
+        color: #333;
+
+        font-size: 14px;
+        cursor: pointer;
         outline: none;
       }
 
+      select:hover,
       select:focus {
-        border: none;
+        background-color: var(--main-color-lg);
+        color: white;
+
+        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.2);
+      }
+
+      select option {
+        padding: 10px;
+        font-size: 14px;
+
+        background-color: white;
+
+        color: gray;
+      }
+
+      select option:hover,
+      select option:focus {
+        background-color: var(--main-color);
+        color: white;
+
+        cursor: pointer;
       }
     `,
   ];
+
+  constructor() {
+    super();
+    window.addEventListener("popstate", () => {
+      console.log("popstate");
+      this.currentPath = window.router.location.pathname;
+      this.requestUpdate();
+    });
+  }
+
+  changeLang(e) {
+    const lang = e.target.value.toLowerCase();
+    i18next.changeLanguage(lang);
+  }
 
   render() {
     return html` <nav>
@@ -81,17 +134,29 @@ class Navbar extends LitElement {
       </a>
 
       <ul>
-        <li>
-          <a href="/">Employees</a>
-        </li>
-        <li>
-          <a href="/add-new">Add New</a>
-        </li>
+        ${NAVBAR_LINKS.map((el) => {
+          console.log("NAVBAR_LINKS", el.to, window.router.location.pathname);
+          return html`
+            <li>
+              <a
+                class=${el.to === (this.currentPath || "/")
+                  ? "active"
+                  : "inactive"}
+                href=${el.to}
+                >${t(el.title)}</a
+              >
+            </li>
+          `;
+        })}
 
         <li>
-          <select>
-            <option value="EN">EN</option>
-            <option value="TR">TR</option>
+          <select @change=${(e) => this.changeLang(e)}>
+            ${LANGS.map(
+              (el) => html`<
+                <option ?selected=${i18next.language === el} value=${el}>
+                  ${el.toUpperCase()}
+                </option> `
+            )}
           </select>
         </li>
       </ul>

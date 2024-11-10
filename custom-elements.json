@@ -125,65 +125,162 @@
     },
     {
       "kind": "javascript-module",
-      "path": "view/add-new.js",
+      "path": "util/index.js",
       "declarations": [
         {
-          "kind": "class",
-          "description": "",
-          "name": "AddNew",
-          "members": [],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "add-new",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "custom-element-definition",
-          "name": "add-new",
-          "declaration": {
-            "name": "AddNew",
-            "module": "view/add-new.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "view/edit-item.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "EditItem",
-          "members": [
+          "kind": "function",
+          "name": "convertDate",
+          "parameters": [
             {
-              "kind": "field",
-              "name": "data",
-              "type": {
-                "text": "null"
-              },
-              "default": "null"
+              "name": "date"
+            },
+            {
+              "name": "lang",
+              "default": "\"TR\""
             }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "formatPhoneNumber",
+          "parameters": [
+            {
+              "name": "phone"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "isEmpty",
+          "parameters": [
+            {
+              "name": "text"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "isValidBirthDate",
+          "parameters": [
+            {
+              "name": "date"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "isValidDate",
+          "parameters": [
+            {
+              "name": "date"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "isEmail",
+          "parameters": [
+            {
+              "name": "email"
+            }
+          ]
+        },
+        {
+          "kind": "variable",
+          "name": "FORM_DATA",
+          "type": {
+            "text": "array"
           },
-          "tagName": "edit-item",
-          "customElement": true
+          "default": "[\r\n  {\r\n    name: \"First Name\",\r\n    id: \"first-name\",\r\n    type: \"text\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Last Name\",\r\n    id: \"last-name\",\r\n    type: \"text\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Date of Birth\",\r\n    id: \"dob\",\r\n    type: \"date\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Date of Employment\",\r\n    id: \"doe\",\r\n    type: \"date\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Phone\",\r\n    id: \"phone\",\r\n    type: \"tel\",\r\n    placeholder: \"5XXXXXXXXX\",\r\n    maxLength: \"10\",\r\n  },\r\n\r\n  {\r\n    name: \"Email\",\r\n    id: \"email\",\r\n    type: \"email\",\r\n    other: {},\r\n  },\r\n]"
+        },
+        {
+          "kind": "variable",
+          "name": "FORM_DATA_SELECT",
+          "type": {
+            "text": "array"
+          },
+          "default": "[\r\n  {\r\n    name: \"Department\",\r\n    id: \"department\",\r\n    type: \"text\",\r\n    options: [\"\", \"Analytics\", \"Tech\"],\r\n  },\r\n  {\r\n    name: \"Position\",\r\n    id: \"position\",\r\n    type: \"text\",\r\n    options: [\"\", \"Junior\", \"Medior\", \"Senior\"],\r\n  },\r\n]"
+        },
+        {
+          "kind": "variable",
+          "name": "NAVBAR_LINKS",
+          "type": {
+            "text": "array"
+          },
+          "default": "[\r\n  {\r\n    to: \"/\",\r\n    title: \"Employees\",\r\n  },\r\n  {\r\n    to: \"/add-new\",\r\n    title: \"Add New\",\r\n  },\r\n]"
         }
       ],
       "exports": [
         {
-          "kind": "custom-element-definition",
-          "name": "edit-item",
+          "kind": "js",
+          "name": "convertDate",
           "declaration": {
-            "name": "EditItem",
-            "module": "view/edit-item.js"
+            "name": "convertDate",
+            "module": "util/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "formatPhoneNumber",
+          "declaration": {
+            "name": "formatPhoneNumber",
+            "module": "util/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "isEmpty",
+          "declaration": {
+            "name": "isEmpty",
+            "module": "util/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "isValidBirthDate",
+          "declaration": {
+            "name": "isValidBirthDate",
+            "module": "util/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "isValidDate",
+          "declaration": {
+            "name": "isValidDate",
+            "module": "util/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "isEmail",
+          "declaration": {
+            "name": "isEmail",
+            "module": "util/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "FORM_DATA",
+          "declaration": {
+            "name": "FORM_DATA",
+            "module": "util/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "FORM_DATA_SELECT",
+          "declaration": {
+            "name": "FORM_DATA_SELECT",
+            "module": "util/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "NAVBAR_LINKS",
+          "declaration": {
+            "name": "NAVBAR_LINKS",
+            "module": "util/index.js"
           }
         }
       ]
@@ -258,27 +355,144 @@
     },
     {
       "kind": "javascript-module",
-      "path": "util/index.js",
+      "path": "view/form-item.js",
       "declarations": [
         {
-          "kind": "function",
-          "name": "convertDate",
-          "parameters": [
+          "kind": "class",
+          "description": "",
+          "name": "FormItem",
+          "members": [
             {
-              "name": "date"
+              "kind": "method",
+              "name": "handleSubmit",
+              "parameters": [
+                {
+                  "name": "e"
+                },
+                {
+                  "name": "isFormValid"
+                }
+              ]
             },
             {
-              "name": "lang",
-              "default": "\"TR\""
+              "kind": "method",
+              "name": "handleEditConfirm"
+            },
+            {
+              "kind": "method",
+              "name": "handleEditReject"
+            },
+            {
+              "kind": "method",
+              "name": "handleInputChange",
+              "parameters": [
+                {
+                  "name": "event"
+                },
+                {
+                  "name": "isTouched"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleBlur",
+              "parameters": [
+                {
+                  "name": "event"
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "employee",
+              "type": {
+                "text": "object"
+              },
+              "default": "{\r\n      \"First Name\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      \"Last Name\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      \"Date of Employment\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isValidDate,\r\n      },\r\n      \"Date of Birth\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isValidBirthDate,\r\n      },\r\n      Phone: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      Email: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmail,\r\n      },\r\n      Department: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      Position: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n    }"
+            },
+            {
+              "kind": "field",
+              "name": "selectedId",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "showEditModal",
+              "type": {
+                "text": "null"
+              },
+              "default": "null"
+            },
+            {
+              "kind": "field",
+              "name": "isChanged",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "method",
+              "name": "stateUpdated",
+              "inheritedFrom": {
+                "name": "BaseComponent",
+                "module": "util/store/base-component.js"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "unsubscribe",
+              "inheritedFrom": {
+                "name": "BaseComponent",
+                "module": "util/store/base-component.js"
+              }
             }
-          ]
+          ],
+          "superclass": {
+            "name": "BaseComponent",
+            "module": "/util/store/base-component.js"
+          },
+          "tagName": "form-item",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "form-item",
+          "declaration": {
+            "name": "FormItem",
+            "module": "view/form-item.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "util/localization/index.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "LANGS",
+          "type": {
+            "text": "array"
+          },
+          "default": "[\"en\", \"tr\"]"
+        },
+        {
+          "kind": "variable",
+          "name": "defaultLang"
         },
         {
           "kind": "function",
-          "name": "formatPhoneNumber",
+          "name": "initializeLang",
           "parameters": [
             {
-              "name": "phone"
+              "name": "selected"
             }
           ]
         }
@@ -286,18 +500,82 @@
       "exports": [
         {
           "kind": "js",
-          "name": "convertDate",
+          "name": "LANGS",
           "declaration": {
-            "name": "convertDate",
-            "module": "util/index.js"
+            "name": "LANGS",
+            "module": "util/localization/index.js"
           }
         },
         {
           "kind": "js",
-          "name": "formatPhoneNumber",
+          "name": "defaultLang",
           "declaration": {
-            "name": "formatPhoneNumber",
-            "module": "util/index.js"
+            "name": "defaultLang",
+            "module": "util/localization/index.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "initializeLang",
+          "declaration": {
+            "name": "initializeLang",
+            "module": "util/localization/index.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "util/store/base-component.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "BaseComponent",
+          "members": [
+            {
+              "kind": "method",
+              "name": "stateUpdated"
+            },
+            {
+              "kind": "field",
+              "name": "unsubscribe"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BaseComponent",
+          "declaration": {
+            "name": "BaseComponent",
+            "module": "util/store/base-component.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "util/store/index.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "store"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "store",
+          "declaration": {
+            "name": "store",
+            "module": "util/store/index.js"
           }
         }
       ]
@@ -663,7 +941,21 @@
           "kind": "class",
           "description": "",
           "name": "Navbar",
-          "members": [],
+          "members": [
+            {
+              "kind": "field",
+              "name": "currentPath"
+            },
+            {
+              "kind": "method",
+              "name": "changeLang",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            }
+          ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
@@ -685,56 +977,49 @@
     },
     {
       "kind": "javascript-module",
-      "path": "util/store/base-component.js",
+      "path": "view/components/shared.container.js",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "BaseComponent",
+          "name": "Container",
           "members": [
             {
-              "kind": "method",
-              "name": "stateUpdated"
-            },
-            {
               "kind": "field",
-              "name": "unsubscribe"
+              "name": "header",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "attribute": "header"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "header",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "fieldName": "header"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
+          "tagName": "shared-container",
           "customElement": true
         }
       ],
       "exports": [
         {
-          "kind": "js",
-          "name": "BaseComponent",
+          "kind": "custom-element-definition",
+          "name": "shared-container",
           "declaration": {
-            "name": "BaseComponent",
-            "module": "util/store/base-component.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "util/store/index.js",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "store"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "store",
-          "declaration": {
-            "name": "store",
-            "module": "util/store/index.js"
+            "name": "Container",
+            "module": "view/components/shared.container.js"
           }
         }
       ]
