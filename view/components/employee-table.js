@@ -218,6 +218,7 @@ class EmployeeTable extends LitElement {
 
       .grid-item > div {
         margin-bottom: 10px;
+        font-size: 14px;
       }
 
       .grid-item div > span {
@@ -245,12 +246,19 @@ class EmployeeTable extends LitElement {
           max-width: calc(99% - 12px);
         }
 
-        table button img,
-        .gridwrapper button img {
+        .grid-item > div {
+          margin-bottom: 5px;
+        }
+
+        .grid-item h4 {
+          margin: 10px 0;
+        }
+
+        /* table button img{
           height: 22px;
 
           margin: 15px;
-        }
+        } */
 
         th,
         td {

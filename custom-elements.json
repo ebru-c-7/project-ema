@@ -744,7 +744,7 @@
               "type": {
                 "text": "object"
               },
-              "default": "{\r\n    total: 1,\r\n    current: 1,\r\n    perPage: 7,\r\n    buttons: 4,\r\n    currData: [],\r\n  }"
+              "default": "{\r\n    total: 1,\r\n    current: 1,\r\n    perPage: 12,\r\n    buttons: 4,\r\n    currData: [],\r\n  }"
             },
             {
               "kind": "method",
@@ -953,7 +953,7 @@
     },
     {
       "kind": "javascript-module",
-      "path": "view/components/shared.container.js",
+      "path": "view/components/shared-container.js",
       "declarations": [
         {
           "kind": "class",
@@ -995,7 +995,7 @@
           "name": "shared-container",
           "declaration": {
             "name": "Container",
-            "module": "view/components/shared.container.js"
+            "module": "view/components/shared-container.js"
           }
         }
       ]
