@@ -9,10 +9,7 @@ export const convertDate = (date, lang = "TR") => {
 };
 
 export const formatPhoneNumber = (phone) => {
-  return `+(90) ${phone.slice(0, 3)} ${phone.slice(3, 6)} ${phone.slice(
-    6,
-    8
-  )} ${phone.slice(8, 10)}`;
+  return `${phone.slice(0, 5)} ${phone.slice(5, 8)} ${phone.slice(8, 11)} ${phone.slice(11, 13)} ${phone.slice(13, 15)}`;
 };
 
 export const isEmpty = (text) => text.trim().length > 2;
@@ -69,9 +66,9 @@ export const FORM_DATA = [
   {
     name: "Phone",
     id: "phone",
-    type: "tel",
-    placeholder: "5XXXXXXXXX",
-    maxLength: "10",
+    type: "text",
+    // placeholder: "",
+    // maxLength: "10",
   },
 
   {

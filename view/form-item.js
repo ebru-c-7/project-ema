@@ -2,6 +2,7 @@ import { LitElement, html, css } from "lit";
 import { translate as t } from "lit-i18n";
 import { v4 as uuidv4 } from "uuid";
 import { Router } from "@vaadin/router";
+import IMask from "imask";
 
 import { store } from "../util/store/index.js";
 import { BaseComponent } from "../util/store/base-component.js";
@@ -135,6 +136,9 @@ class FormItem extends BaseComponent {
         isValid: false,
         isTouched: false,
         validate: isEmpty,
+        mask: "{+(9\\0)} 000 000 00 00",
+        maskObj: null,
+        id: "phone",
       },
       Email: {
         value: "",
@@ -161,26 +165,45 @@ class FormItem extends BaseComponent {
     this.isChanged = false;
   }
 
-  firstUpdated() {
-    super.firstUpdated();
+  fetchData() {
     const id = window.router.location.params.id;
-    console.log("firstUpdated:", id);
     if (!id) return;
 
     const item = store.getState().data.find((el) => el._id === id);
-    console.log(item);
     if (!item) return;
 
     this.selectedId = item._id;
 
     for (let key in item) {
-      console.log(item[key], this.employee[key]);
       if (this.employee[key]) {
         this.employee[key].value = item[key];
         this.employee[key].isTouched = true;
         this.employee[key].isValid = this.employee[key].validate(item[key]);
       }
     }
+  }
+
+  applyMask() {
+    for (let key in this.employee) {
+      const item = this.employee[key];
+      if (!!item.mask) {
+        const element = this.shadowRoot.getElementById(item.id);
+        if (element) {
+          const mask = IMask(element, {
+            mask: item.mask,
+          });
+          item.maskObj = mask;
+        }
+      }
+    }
+  }
+
+  firstUpdated() {
+    super.firstUpdated();
+
+    this.fetchData();
+
+    this.applyMask();
 
     this.requestUpdate();
   }
@@ -195,12 +218,14 @@ class FormItem extends BaseComponent {
 
     const newItem = {};
     for (let key in this.employee) {
-      newItem[key] = this.employee[key].value;
+      const item = this.employee[key];
+      newItem[key] = item.mask
+        ? item.maskObj.unmaskedValue
+        : this.employee[key].value;
     }
 
     newItem._id = this.selectedId || uuidv4();
 
-    console.log(newItem);
     if (this.selectedId) {
       this.showEditModal = newItem;
       this.requestUpdate();
@@ -218,7 +243,6 @@ class FormItem extends BaseComponent {
       type: "EDIT_DATA",
       payload: this.showEditModal,
     });
-    console.log(store.getState().data);
 
     Router.go("/");
   }
@@ -228,17 +252,10 @@ class FormItem extends BaseComponent {
     this.requestUpdate();
   }
 
-  // Method to handle form field changes
-  handleInputChange(event, isTouched) {
+  handleInputChange(event) {
     const { name, value } = event.target;
-    console.log("handleInputChange", name, value, this.employee[name]);
 
     let uptVal = value;
-
-    if (["tel", "number"].includes(event.target.type)) {
-      uptVal = value.replace(/[^\d.-]/g, "");
-      event.target.value = uptVal;
-    }
 
     const section = { ...this.employee[name] };
     section.value = uptVal;
@@ -258,7 +275,6 @@ class FormItem extends BaseComponent {
 
   handleBlur(event) {
     const { name, value } = event.target;
-    console.log("handleBlur", name, value);
     this.employee[name].isTouched = true;
 
     this.requestUpdate(); // Manually trigger reactivity to update the DOM
@@ -328,9 +344,14 @@ class FormItem extends BaseComponent {
                   @change=${(e) => this.handleInputChange(e, true)}
                 >
                   ${el.options.map(
-                    (val) => html` <option
-                    ?selected=${val === this.employee[el.name].value}
-                    value=${val}>${t(val)}</option> `
+                    (val) => html`
+                      <option
+                        ?selected=${val === this.employee[el.name].value}
+                        value=${val}
+                      >
+                        ${t(val)}
+                      </option>
+                    `
                   )}
                 </select>
               </div>

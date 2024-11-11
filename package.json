@@ -38,6 +38,7 @@
   "dependencies": {
     "@vaadin/router": "^2.0.0",
     "firebase": "^11.0.1",
+    "imask": "^7.6.1",
     "lit": "^3.2.0",
     "lit-i18n": "^4.1.0",
     "redux": "^5.0.1",
