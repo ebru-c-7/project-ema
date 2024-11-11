@@ -296,8 +296,16 @@ class EmployeeTable extends LitElement {
 
   updated(changedProperties) {
     if (changedProperties.has("data")) {
-      if (!!this.data.length)
-        this.page.total = Math.ceil(this.data.length / this.page.perPage);
+      if (!!this.data.length) {
+        const newTotal = Math.ceil(this.data.length / this.page.perPage);
+        const searchParams = new URLSearchParams(window.location.search);
+        const currParam = +searchParams.get("page");
+        if (newTotal < currParam && this.page.current == currParam) {
+          this.handlePageChange(newTotal);
+          return;
+        }
+        this.page.total = newTotal;
+      }
       this.requestUpdate();
     }
   }
