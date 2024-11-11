@@ -52,6 +52,7 @@ class Container extends LitElement {
 
         width: 100%;
         height: calc(100vh - 164px - 3vh - 90px);
+        height: calc(100dvh - 164px - 3dvh - 90px);
 
         border-radius: 5px;
 
@@ -59,6 +60,7 @@ class Container extends LitElement {
 
         display: flex;
         justify-content: center;
+        align-items: flex-start;
 
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }

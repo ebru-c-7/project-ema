@@ -10,33 +10,37 @@ import "./view/form-item.js";
 
 import "./view/components/main-container.js";
 
-class LitRealWorldIndex extends BaseComponent {
+export class MainIndex extends BaseComponent {
   firstUpdated() {
     super.firstUpdated();
-    console.log("firstUpdated");
+
+    this.setRoutes();
+
     const data = store.getState().data;
     if (!data || !data.length) this.loadData();
 
+    initializeLang(defaultLang);
+  }
+
+  async setRoutes() {
     const router = new Router(this.shadowRoot.querySelector("#outlet"));
-    router.setRoutes([
-      // { path: "/", component: "add-new" },
+    await router.setRoutes([
       { path: "/", component: "employee-list" },
       { path: "/add-new", component: "form-item" },
       { path: "/edit/:id", component: "form-item" },
       { path: "(.*)", redirect: "/" },
     ]);
 
-    window.router = router;
+    store.dispatch({
+      type: "SET_ROUTER",
+      payload: router,
+    });
   }
 
   loadData() {
-    console.log("loadData");
-    initializeLang(defaultLang);
-
     fetch("/assets/data/employees.json")
       .then((res) => res.json())
       .then((empData) => {
-        console.log("empData:", empData);
         store.dispatch({
           type: "INITIAL",
           payload: empData,
@@ -55,4 +59,4 @@ class LitRealWorldIndex extends BaseComponent {
   }
 }
 
-customElements.define("main-index", LitRealWorldIndex);
+customElements.define("main-index", MainIndex);

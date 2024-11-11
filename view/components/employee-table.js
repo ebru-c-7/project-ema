@@ -25,6 +25,7 @@ class EmployeeTable extends LitElement {
 
         width: 100%;
         height: calc(100vh - 164px - 3vh - 50px);
+        height: calc(100dvh - 164px - 3dvh - 50px);
 
         border-radius: 5px;
 
@@ -250,6 +251,16 @@ class EmployeeTable extends LitElement {
 
           margin: 15px;
         }
+
+        th,
+        td {
+          padding: 10px 5px;
+        }
+
+        .tablewrapper tbody > tr > td:nth-child(2),
+        .tablewrapper thead > tr > th:nth-child(2) {
+          left: 110px;
+        }
       }
     `,
   ];
@@ -257,7 +268,7 @@ class EmployeeTable extends LitElement {
   page = {
     total: 1,
     current: 1,
-    perPage: 7,
+    perPage: 12,
     buttons: 4,
     currData: [],
   };
@@ -284,9 +295,7 @@ class EmployeeTable extends LitElement {
   }
 
   updated(changedProperties) {
-    if (changedProperties.has("mode")) {
-      console.log("myState changed:", this.mode);
-      this.page.perPage = this.mode == "galery" ? 12 : 7;
+    if (changedProperties.has("data")) {
       if (!!this.data.length)
         this.page.total = Math.ceil(this.data.length / this.page.perPage);
       this.requestUpdate();
@@ -294,8 +303,9 @@ class EmployeeTable extends LitElement {
   }
 
   handleEdit(e) {
-    console.log(e);
-    window.history.pushState(null, "", `/edit/${e._id}`);
+    const params = new URLSearchParams(window.location.search);
+
+    window.history.pushState(null, "", `/edit/${e._id}?${params?.toString()}`);
     window.dispatchEvent(new Event("popstate"));
   }
 
@@ -330,8 +340,9 @@ class EmployeeTable extends LitElement {
     }
 
     params.set("page", uptPage);
+    const router = store.getState().router;
 
-    const newUrl = `${window.router.location.pathname}?${params.toString()}`;
+    const newUrl = `${router.location.pathname}?${params.toString()}`;
     Router.go(newUrl);
 
     this.page.current = +uptPage;

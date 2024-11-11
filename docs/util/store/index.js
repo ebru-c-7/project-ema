@@ -2,6 +2,7 @@ import { createStore } from "redux";
 
 const initialState = {
   data: [],
+  router: null,
 };
 
 function rootReducer(state = initialState, action) {
@@ -33,6 +34,12 @@ function rootReducer(state = initialState, action) {
       return {
         ...state,
         data: updData,
+      };
+
+    case "SET_ROUTER":
+      return {
+        ...state,
+        router: action.payload,
       };
 
     default:

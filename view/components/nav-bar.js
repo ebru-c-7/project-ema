@@ -6,8 +6,6 @@ import { store } from "../../util/store";
 import { NAVBAR_LINKS } from "../../util";
 
 class Navbar extends LitElement {
-  currentPath = window.router.location.pathname;
-
   static styles = [
     css`
       :host {
@@ -116,7 +114,9 @@ class Navbar extends LitElement {
     super();
     window.addEventListener("popstate", () => {
       console.log("popstate");
-      this.currentPath = window.router.location.pathname;
+      const router = store.getState().router;
+
+      this.currentPath = router.location.pathname;
       this.requestUpdate();
     });
   }
@@ -135,7 +135,6 @@ class Navbar extends LitElement {
 
       <ul>
         ${NAVBAR_LINKS.map((el) => {
-          console.log("NAVBAR_LINKS", el.to, window.router.location.pathname);
           return html`
             <li>
               <a

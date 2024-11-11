@@ -3,10 +3,11 @@ import { translate as t } from "lit-i18n";
 
 import "./components/employee-table.js";
 import { Router } from "@vaadin/router";
+import { store } from "../util/store/index.js";
 
 const viewOptions = ["table", "galery"];
 
-class EmployeeList extends LitElement {
+export class EmployeeList extends LitElement {
   static properties = {
     mode: { type: String },
   };
@@ -82,7 +83,8 @@ class EmployeeList extends LitElement {
     }
 
     params.set("mode", uptMode);
-    const newUrl = `${window.router.location.pathname}?${params.toString()}`;
+    const router = store.getState().router;
+    const newUrl = `${router.location.pathname}?${params.toString()}`;
     Router.go(newUrl);
 
     this.mode = uptMode;
@@ -164,7 +166,6 @@ class EmployeeList extends LitElement {
   }
 
   render() {
-    console.log("render:", this.mode);
     return html` <div>
       <header class="heading">
         <h1>${t("Employee List")}</h1>

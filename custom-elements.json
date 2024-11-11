@@ -4,85 +4,17 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "about-view.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "AboutView",
-          "members": [],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "about-view",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "AboutView",
-          "declaration": {
-            "name": "AboutView",
-            "module": "about-view.js"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "about-view",
-          "declaration": {
-            "name": "AboutView",
-            "module": "about-view.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "home-view.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "Home",
-          "members": [],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "home-view",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Home",
-          "declaration": {
-            "name": "Home",
-            "module": "home-view.js"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "home-view",
-          "declaration": {
-            "name": "Home",
-            "module": "home-view.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "main-index.js",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "LitRealWorldIndex",
+          "name": "MainIndex",
           "members": [
+            {
+              "kind": "method",
+              "name": "setRoutes"
+            },
             {
               "kind": "method",
               "name": "loadData"
@@ -114,14 +46,40 @@
       ],
       "exports": [
         {
+          "kind": "js",
+          "name": "MainIndex",
+          "declaration": {
+            "name": "MainIndex",
+            "module": "main-index.js"
+          }
+        },
+        {
           "kind": "custom-element-definition",
           "name": "main-index",
           "declaration": {
-            "name": "LitRealWorldIndex",
+            "name": "MainIndex",
             "module": "main-index.js"
           }
         }
       ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "test/employee-list_test.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "test/form-item_test.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "test/main-index_test.js",
+      "declarations": [],
+      "exports": []
     },
     {
       "kind": "javascript-module",
@@ -191,7 +149,7 @@
           "type": {
             "text": "array"
           },
-          "default": "[\r\n  {\r\n    name: \"First Name\",\r\n    id: \"first-name\",\r\n    type: \"text\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Last Name\",\r\n    id: \"last-name\",\r\n    type: \"text\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Date of Birth\",\r\n    id: \"dob\",\r\n    type: \"date\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Date of Employment\",\r\n    id: \"doe\",\r\n    type: \"date\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Phone\",\r\n    id: \"phone\",\r\n    type: \"tel\",\r\n    placeholder: \"5XXXXXXXXX\",\r\n    maxLength: \"10\",\r\n  },\r\n\r\n  {\r\n    name: \"Email\",\r\n    id: \"email\",\r\n    type: \"email\",\r\n    other: {},\r\n  },\r\n]"
+          "default": "[\r\n  {\r\n    name: \"First Name\",\r\n    id: \"first-name\",\r\n    type: \"text\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Last Name\",\r\n    id: \"last-name\",\r\n    type: \"text\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Date of Birth\",\r\n    id: \"dob\",\r\n    type: \"date\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Date of Employment\",\r\n    id: \"doe\",\r\n    type: \"date\",\r\n    other: {},\r\n  },\r\n  {\r\n    name: \"Phone\",\r\n    id: \"phone\",\r\n    type: \"text\",\r\n    // placeholder: \"\",\r\n    // maxLength: \"10\",\r\n  },\r\n\r\n  {\r\n    name: \"Email\",\r\n    id: \"email\",\r\n    type: \"email\",\r\n    other: {},\r\n  },\r\n]"
         },
         {
           "kind": "variable",
@@ -344,6 +302,14 @@
       ],
       "exports": [
         {
+          "kind": "js",
+          "name": "EmployeeList",
+          "declaration": {
+            "name": "EmployeeList",
+            "module": "view/employee-list.js"
+          }
+        },
+        {
           "kind": "custom-element-definition",
           "name": "employee-list",
           "declaration": {
@@ -362,6 +328,14 @@
           "description": "",
           "name": "FormItem",
           "members": [
+            {
+              "kind": "method",
+              "name": "fetchData"
+            },
+            {
+              "kind": "method",
+              "name": "applyMask"
+            },
             {
               "kind": "method",
               "name": "handleSubmit",
@@ -388,9 +362,6 @@
               "parameters": [
                 {
                   "name": "event"
-                },
-                {
-                  "name": "isTouched"
                 }
               ]
             },
@@ -409,7 +380,7 @@
               "type": {
                 "text": "object"
               },
-              "default": "{\r\n      \"First Name\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      \"Last Name\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      \"Date of Employment\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isValidDate,\r\n      },\r\n      \"Date of Birth\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isValidBirthDate,\r\n      },\r\n      Phone: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      Email: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmail,\r\n      },\r\n      Department: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      Position: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n    }"
+              "default": "{\r\n      \"First Name\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      \"Last Name\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      \"Date of Employment\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isValidDate,\r\n      },\r\n      \"Date of Birth\": {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isValidBirthDate,\r\n      },\r\n      Phone: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n        mask: \"{+(9\\\\0)} 000 000 00 00\",\r\n        maskObj: null,\r\n        id: \"phone\",\r\n      },\r\n      Email: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmail,\r\n      },\r\n      Department: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n      Position: {\r\n        value: \"\",\r\n        isValid: false,\r\n        isTouched: false,\r\n        validate: isEmpty,\r\n      },\r\n    }"
             },
             {
               "kind": "field",
@@ -462,6 +433,14 @@
       ],
       "exports": [
         {
+          "kind": "js",
+          "name": "FormItem",
+          "declaration": {
+            "name": "FormItem",
+            "module": "view/form-item.js"
+          }
+        },
+        {
           "kind": "custom-element-definition",
           "name": "form-item",
           "declaration": {
@@ -492,7 +471,8 @@
           "name": "initializeLang",
           "parameters": [
             {
-              "name": "selected"
+              "name": "selected",
+              "default": "defaultLang"
             }
           ]
         }
@@ -942,10 +922,6 @@
           "description": "",
           "name": "Navbar",
           "members": [
-            {
-              "kind": "field",
-              "name": "currentPath"
-            },
             {
               "kind": "method",
               "name": "changeLang",

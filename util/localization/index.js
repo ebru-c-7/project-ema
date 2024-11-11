@@ -4,7 +4,7 @@ import { initLitI18n } from "lit-i18n";
 export const LANGS = ["en", "tr"];
 export const defaultLang = document.documentElement.lang;
 
-export async function initializeLang(selected) {
+export async function initializeLang(selected = defaultLang) {
   i18next.use(initLitI18n).init({
     lng: selected,
     supportedLngs: LANGS,

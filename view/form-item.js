@@ -15,10 +15,10 @@ import {
   isValidDate,
 } from "./../util/index.js";
 
-import "./components/shared.container.js";
+import "./components/shared-container.js";
 import "./components/dialog-modal.js";
 
-class FormItem extends BaseComponent {
+export class FormItem extends BaseComponent {
   static styles = [
     css`
       form {
@@ -166,7 +166,8 @@ class FormItem extends BaseComponent {
   }
 
   fetchData() {
-    const id = window.router.location.params.id;
+    const router = store.getState().router;
+    const id = router.location.params.id;
     if (!id) return;
 
     const item = store.getState().data.find((el) => el._id === id);
@@ -177,6 +178,9 @@ class FormItem extends BaseComponent {
     for (let key in item) {
       if (this.employee[key]) {
         this.employee[key].value = item[key];
+        if (!!this.employee[key].maskObj) {
+          this.employee[key].maskObj.unmaskedValue = this.employee[key].value;
+        }
         this.employee[key].isTouched = true;
         this.employee[key].isValid = this.employee[key].validate(item[key]);
       }
@@ -191,6 +195,7 @@ class FormItem extends BaseComponent {
         if (element) {
           const mask = IMask(element, {
             mask: item.mask,
+            lazy: false,
           });
           item.maskObj = mask;
         }
@@ -201,9 +206,8 @@ class FormItem extends BaseComponent {
   firstUpdated() {
     super.firstUpdated();
 
-    this.fetchData();
-
     this.applyMask();
+    this.fetchData();
 
     this.requestUpdate();
   }
@@ -212,7 +216,6 @@ class FormItem extends BaseComponent {
     e.preventDefault();
 
     if (!isFormValid) {
-      console.log("invalid: ", this.employee);
       return;
     }
 
@@ -244,7 +247,9 @@ class FormItem extends BaseComponent {
       payload: this.showEditModal,
     });
 
-    Router.go("/");
+    const params = new URLSearchParams(window.location.search);
+    console.log(params.toString())
+    Router.go(params ? `/?${params.toString()}`: "/");
   }
 
   handleEditReject() {
@@ -277,7 +282,7 @@ class FormItem extends BaseComponent {
     const { name, value } = event.target;
     this.employee[name].isTouched = true;
 
-    this.requestUpdate(); // Manually trigger reactivity to update the DOM
+    this.requestUpdate();
   }
 
   render() {
@@ -289,8 +294,6 @@ class FormItem extends BaseComponent {
     if (!!this.selectedId) {
       isFormValid = isFormValid && this.isChanged;
     }
-
-    if (!isFormValid) console.log(this.employee);
 
     let modal = null;
     if (!!this.showEditModal && !!this.selectedId) {

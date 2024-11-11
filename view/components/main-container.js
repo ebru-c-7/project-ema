@@ -7,11 +7,13 @@ class MainContainer extends LitElement {
     css`
       :host {
         padding: 3vh 5vw;
+        padding: 3dvh 5vw;
 
         background-color: var(--main-bg);
 
         display: block;
         height: 94vh;
+        height: 94dvh;
 
         overflow-y: hidden;
       }
